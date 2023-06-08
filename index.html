@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF_8">
+  <title>My first page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <form action = 'index.html' method = 'get'>
+    <input type = 'submit' name = 'sub' value = 'send'/>
+    <br/><input type = 'text' name = "a" value = 'abc' placeholder = "text"/>
+    <br/><input type = 'time' name = "b" value = '11:00'/>
+    <br/><input type = 'date' name = "c" value = '2023-06-03'/>
+    <br/><input type = 'checkbox' name = "d" checked/>
+    <br/><input type = 'radio' name = "class" value = '8' checked/>8
+         <input type = 'radio' name = "class" value = '9'/>9 
+  </form>
+  <select name = "Gender">]
+    <option value = "underfined" selected>не определён</option>
+    <option value = "male">мужчина</option>
+    <option value = "female">женщина</option>
+  </select>
+  <style>
+    input {
+      zoom: 0.5;
+    }
+    form {
+      font-size: 0.5em
+    }
+  </style>  
+  <script type="module">
+    import { initGL } from './main.js';
+
+    window.addEventListener("load", () => {
+      initGL();
+    });
+
+</script>  
+  <div>
+    <canvas id="glCanvas" width="1000" height="1000"></canvas>
+    <!-- <p >Some text</p> -->
+    <!-- <p id="1" class="animatedText">Some text</p> -->
+  </div>
+</body>      
