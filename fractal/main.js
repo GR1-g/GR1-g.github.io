@@ -37,8 +37,8 @@ export function initGL() {
   gl.enable(gl.DEPTH_TEST);
 
   let vs, fs, text;
-  let filename = "default";
-//  let filename = "fractal";
+//  let filename = "default";
+  let filename = "fractal";
 
   locAtUp.loc = vec(8, 8, 8);
   locAtUp.at = vec(0, 0, 0);
@@ -114,8 +114,8 @@ export function initGL() {
 
     const beginTime = Date.now();
 
-//    let prim = primCreate(gl, gl.TRIANGLE_STRIP, vert, ind, posLoc, normLoc);
-    let prim = primLoad(gl, text, posLoc, normLoc);
+    let prim = primCreate(gl, gl.TRIANGLE_STRIP, vert, ind, posLoc, normLoc);
+//    let prim = primLoad(gl, text, posLoc, normLoc);
 
     const v1 = vec(0, 0, -2);
     const v2 = vec(0 , 0, 0);
