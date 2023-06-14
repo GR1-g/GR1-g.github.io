@@ -44,10 +44,10 @@ export function initGL() {
   locAtUp.at = vec(0, 0, 0);
   locAtUp.up = vec(0, 1, 0); 
 
-  const ft1 = fetch(`/shader/${filename}/vert.glsl`).then((res) => res.text()).then((data) => {
+  const ft1 = fetch(`shader/${filename}/vert.glsl`).then((res) => res.text()).then((data) => {
     vs = data;
   });
-  const ft2 = fetch(`/shader/${filename}/frag.glsl`).then((res) => res.text()).then((data) => {
+  const ft2 = fetch(`shader/${filename}/frag.glsl`).then((res) => res.text()).then((data) => {
     fs = data;
   });
   const ft3 = fetch('cow.obj').then((res) => res.text()).then((data) => {
