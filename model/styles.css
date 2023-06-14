@@ -1,0 +1,15 @@
+@import url('https://matiaslescano.com.ar/static/fonts/pixelicious.css');
+/* 
+body {
+    background-color: #8971cebc;
+}
+*/
+
+.animatedText {
+    font-family: Pixelicious, monospace;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: transparent;
+    filter: blur(0.3px);
+    animation: 2s ease-in-out infinite alternate pulse;
+}

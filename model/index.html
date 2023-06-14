@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF_8">
+  <title>My first page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body> 
+  <style>
+  </style>  
+  <script type="module">
+    import { initGL, camMouse } from "./main.js";
+
+    window.addEventListener("load", () => {
+      initGL();
+    });
+
+    window.addEventListener("mousemove", (event) => {
+      camMouse(event.movementX, event.movementY, 0);
+    })
+    window.addEventListener("wheel", (event) => {
+      camMouse(0, 0, event.deltaY)
+    })
+</script>  
+  <div>
+    <canvas id="glCanvas" width="1000" height="1000"></canvas>
+    <!-- <p >Some text</p> -->
+    <!-- <p id="1" class="animatedText">Some text</p> -->
+  </div>
+</body>      
