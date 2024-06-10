@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="./output/main.js"></script>
+    <style>
+        .block {
+            background: #d0eb79;
+            padding: 10px;
+            border: solid 1px rgb(0, 0, 0);
+            width: 500px;
+        }
+
+        .button {
+            background: #40cabc;
+            width: 100px;
+        }
+
+        .input {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="glcanvas" width="500" height="500"></canvas>
+    <form>
+        <label for="figures-select">Figures</label>
+        <select id="type" name="figures" id="figures-select">
+            <option value="sphere">Sphere</option>
+            <option value="cube">Cube</option>
+            <option value="torus">Torus</option>
+        </select>
+        <input id="button" type="button" class="button" value="Add figure">
+    </form>
+    <div id="shape" class="block"></div>
+</body>
