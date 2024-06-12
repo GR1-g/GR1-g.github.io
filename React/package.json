@@ -1,0 +1,53 @@
+{
+  "name": "0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prettier-format": "prettier --config .prettierrc '*.ts' --write",
+    "build:watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/x-charts": "^7.6.2",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "@types/lodash": "^4.17.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "anychart": "^8.12.1",
+    "anychart-react": "^1.4.1",
+    "astroturf": "^1.2.0",
+    "chart.js": "^4.4.3",
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "maplibre-gl": "^4.3.2",
+    "openmeteo": "^1.1.4",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-map-gl": "^7.1.7",
+    "rechart": "^0.0.1",
+    "rollup": "^4.18.0",
+    "rollup-plugin-import-css": "^3.5.0",
+    "st": "^3.0.0",
+    "tslib": "^2.6.2",
+    "vis": "^4.21.0-EOL"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0",
+    "rollup-plugin-astroturf": "^0.1.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
+  }
+}

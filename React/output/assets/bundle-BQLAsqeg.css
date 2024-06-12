@@ -1,0 +1,9 @@
+.mapStyle {
+    position: absolute;
+    width: 600;
+    height: 100;
+}
+
+.block {
+    background: #d0eb79;
+}
